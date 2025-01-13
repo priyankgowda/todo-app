@@ -7,7 +7,6 @@ function ToDoList() {
     const [currentUser, setCurrentUser] = useState('');
     const navigate = useNavigate();
 
-    // Only adding styles for the new logout button
     const logoutButtonStyle = {
         position: 'absolute',
         top: '10px',
