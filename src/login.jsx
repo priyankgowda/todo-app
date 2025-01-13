@@ -51,6 +51,7 @@ function Login() {
             borderRadius: '4px',
             fontSize: '1rem',
             outline: 'none',
+            boxSizing: 'border-box',
         },
         inputFocus: {
             borderColor: '#5c9ded',
@@ -70,6 +71,7 @@ function Login() {
             fontSize: '1rem',
             cursor: 'pointer',
             transition: 'background-color 0.3s',
+            boxSizing: 'border-box',
         },
         buttonHover: {
             backgroundColor: '#2980b9',
