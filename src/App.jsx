@@ -5,7 +5,7 @@ import ToDoList from './TodoList';
 
 function App() {
     return (
-        <Router basename="/todo-app"> {/* Add basename here */}
+        <Router basename="/todo-app">
             <Routes>
                 <Route path="/register" element={<Register />} />
                 <Route path="/login" element={<Login />} />
