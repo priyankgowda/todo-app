@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -112,7 +113,7 @@ function Login() {
                 </button>
                 <p>
                     Don't have an account? <br />
-                    <a href="/register" style={styles.link}>Register here</a>
+                    <Link to="/Register" style={styles.link}>Register here</Link>
                 </p>
             </div>
         </div>

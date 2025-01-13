@@ -1,16 +1,16 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import Register from './Register';
 import Login from './login';
 import ToDoList from './TodoList';
 
 function App() {
     return (
-        <Router basename="/todo-app">
+        <Router>
             <Routes>
-                <Route path="todo/Register" element={<Register />} />
-                <Route path="todo/login" element={<Login />} />
+                <Route path="/Register" element={<Register />} />
+                <Route path="/login" element={<Login />} />
                 <Route path="/todo" element={<ToDoList />} />
-                <Route path="/" element={<Login />} /> {/* Default route */}
+                <Route path="/" element={<Navigate to="/login" />} />
             </Routes>
         </Router>
     );
