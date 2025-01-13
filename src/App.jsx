@@ -7,7 +7,7 @@ function App() {
     return (
         <Router basename="/todo-app">
             <Routes>
-                <Route path="/register" element={<Register />} />
+                <Route path="/Register" element={<Register />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/todo" element={<ToDoList />} />
                 <Route path="/" element={<Login />} /> {/* Default route */}
