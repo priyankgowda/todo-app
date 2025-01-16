@@ -10,7 +10,7 @@ function Register() {
 
     function handleRegister() {
         if (localStorage.getItem(username)) {
-            setError('Username already exists.');
+            setError('Username already exists. Login instead.');
             return;
         }
 
